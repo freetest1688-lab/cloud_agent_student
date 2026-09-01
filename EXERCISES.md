@@ -1,6 +1,6 @@
 # Cloud Agent — Hands-On Exercises
 
-A working multi-agent system with **20 implementations removed**. Each `TODO`
+A working multi-agent system with **20 implementations needed**. Each `TODO`
 is 1–10 lines. The scaffolding, prompts, imports and tests are all intact — you
 write only the logic that teaches something.
 
