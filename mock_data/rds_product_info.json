@@ -1,0 +1,464 @@
+{
+  "nodes": [
+    {
+      "id": "RDS",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Relational Database Service"
+        },
+        {
+          "key": "availability",
+          "value": "99.99%"
+        }
+      ]
+    },
+    {
+      "id": "ECS",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Elastic Compute Service"
+        }
+      ]
+    },
+    {
+      "id": "ESSD",
+      "label": "Storage",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Enhanced SSD cloud disks"
+        }
+      ]
+    },
+    {
+      "id": "ecs.c7.large",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "ecs.g8a.4xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "RDS MySQL",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "The world's most popular open-source database"
+        }
+      ]
+    },
+    {
+      "id": "RDS PostgreSQL",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Advanced open-source relational database"
+        }
+      ]
+    },
+    {
+      "id": "5.7",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Supported version of RDS MySQL"
+        }
+      ]
+    },
+    {
+      "id": "8.0",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Supported version of RDS MySQL"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Supported version of RDS PostgreSQL"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Supported version of RDS PostgreSQL"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Supported version of RDS PostgreSQL"
+        }
+      ]
+    },
+    {
+      "id": "High-concurrency transaction systems",
+      "label": "UseCase",
+      "properties": []
+    },
+    {
+      "id": "Internet social platforms",
+      "label": "UseCase",
+      "properties": []
+    },
+    {
+      "id": "Gaming data storage",
+      "label": "UseCase",
+      "properties": []
+    },
+    {
+      "id": "GIS",
+      "label": "UseCase",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Geographic information systems"
+        }
+      ]
+    },
+    {
+      "id": "Complex financial data processing",
+      "label": "UseCase",
+      "properties": []
+    },
+    {
+      "id": "Recommendation systems",
+      "label": "UseCase",
+      "properties": []
+    },
+    {
+      "id": "Basic Edition",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "architecture",
+          "value": "Single-node"
+        },
+        {
+          "key": "storage",
+          "value": "ESSD PL1"
+        }
+      ]
+    },
+    {
+      "id": "High Availability Edition",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "architecture",
+          "value": "Dual-node Master-Standby"
+        }
+      ]
+    },
+    {
+      "id": "China North 2 (Beijing) Zone K (cn-beijing-k)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "China North 2 (Beijing) Zone L (cn-beijing-l)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "ESSD PL1",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "Failover",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "time",
+          "value": "30 seconds"
+        }
+      ]
+    },
+    {
+      "id": "ecs.c7.8xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "RDS Primary Node",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "Read-only Instance",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "max_count",
+          "value": "10"
+        }
+      ]
+    },
+    {
+      "id": "Read/Write Splitting Endpoint",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "ecs.g8a.xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "China North 2 (Beijing)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "vpc-prod-beijing",
+      "label": "Network",
+      "properties": []
+    },
+    {
+      "id": "Cloud Enterprise Network (CEN)",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "RDS Whitelist",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Connection Refused",
+      "label": "ErrorCode",
+      "properties": []
+    },
+    {
+      "id": "TCP 3306",
+      "label": "Port",
+      "properties": [
+        {
+          "key": "protocol",
+          "value": "MySQL"
+        }
+      ]
+    },
+    {
+      "id": "TCP 5432",
+      "label": "Port",
+      "properties": [
+        {
+          "key": "protocol",
+          "value": "PostgreSQL"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "ecs.g8a.xlarge",
+      "type": "LOCATED_IN",
+      "target": "vpc-prod-beijing"
+    },
+    {
+      "source": "RDS Primary Node",
+      "type": "LOCATED_IN",
+      "target": "China North 2 (Beijing)"
+    },
+    {
+      "source": "RDS",
+      "type": "REQUIRES",
+      "target": "ECS"
+    },
+    {
+      "source": "RDS",
+      "type": "SUPPORTS",
+      "target": "RDS MySQL"
+    },
+    {
+      "source": "RDS PostgreSQL",
+      "type": "SUPPORTS_VERSION",
+      "target": "14"
+    },
+    {
+      "source": "Read/Write Splitting Endpoint",
+      "type": "ROUTES_WRITE_REQUESTS",
+      "target": "RDS Primary Node"
+    },
+    {
+      "source": "Connection Refused",
+      "type": "RESULTS_FROM",
+      "target": "ecs.g8a.xlarge"
+    },
+    {
+      "source": "RDS PostgreSQL",
+      "type": "SUPPORTS_VERSION",
+      "target": "13"
+    },
+    {
+      "source": "Connection Refused",
+      "type": "RESULTS_FROM",
+      "target": "RDS Primary Node"
+    },
+    {
+      "source": "High Availability Edition",
+      "type": "DEPLOYS_PRIMARY_NODE",
+      "target": "China North 2 (Beijing) Zone K (cn-beijing-k)"
+    },
+    {
+      "source": "RDS PostgreSQL",
+      "type": "SUPPORTS_USE_CASE",
+      "target": "Recommendation systems"
+    },
+    {
+      "source": "RDS MySQL",
+      "type": "SUPPORTS_USE_CASE",
+      "target": "Gaming data storage"
+    },
+    {
+      "source": "RDS Primary Node",
+      "type": "LOCATED_IN",
+      "target": "vpc-prod-beijing"
+    },
+    {
+      "source": "RDS MySQL",
+      "type": "SUPPORTS_VERSION",
+      "target": "8.0"
+    },
+    {
+      "source": "High Availability Edition",
+      "type": "DEPLOYS_STANDBY_NODE",
+      "target": "China North 2 (Beijing) Zone L (cn-beijing-l)"
+    },
+    {
+      "source": "Read/Write Splitting Endpoint",
+      "type": "DISTRIBUTES_READ_REQUESTS",
+      "target": "Read-only Instance"
+    },
+    {
+      "source": "RDS",
+      "type": "SUPPORTS",
+      "target": "Basic Edition"
+    },
+    {
+      "source": "ecs.c7.8xlarge",
+      "type": "CAUSES_BOTTLENECK",
+      "target": "RDS Primary Node"
+    },
+    {
+      "source": "High Availability Edition",
+      "type": "SUPPORTS",
+      "target": "Read-only Instance"
+    },
+    {
+      "source": "ecs.g8a.xlarge",
+      "type": "REQUIRES_OUTBOUND_PERMISSION",
+      "target": "TCP 3306"
+    },
+    {
+      "source": "RDS",
+      "type": "SUPPORTS",
+      "target": "RDS PostgreSQL"
+    },
+    {
+      "source": "Basic Edition",
+      "type": "USES",
+      "target": "ESSD PL1"
+    },
+    {
+      "source": "RDS MySQL",
+      "type": "SUPPORTS_VERSION",
+      "target": "5.7"
+    },
+    {
+      "source": "RDS Whitelist",
+      "type": "REQUIRES_IP_AUTHORIZATION",
+      "target": "ecs.g8a.xlarge"
+    },
+    {
+      "source": "RDS PostgreSQL",
+      "type": "SUPPORTS_VERSION",
+      "target": "15"
+    },
+    {
+      "source": "RDS MySQL",
+      "type": "SUPPORTS_USE_CASE",
+      "target": "High-concurrency transaction systems"
+    },
+    {
+      "source": "RDS",
+      "type": "REQUIRES",
+      "target": "ESSD"
+    },
+    {
+      "source": "RDS MySQL",
+      "type": "SUPPORTS_USE_CASE",
+      "target": "Internet social platforms"
+    },
+    {
+      "source": "High Availability Edition",
+      "type": "HAS_FEATURE",
+      "target": "Failover"
+    },
+    {
+      "source": "ecs.g8a.xlarge",
+      "type": "LOCATED_IN",
+      "target": "China North 2 (Beijing)"
+    },
+    {
+      "source": "RDS Whitelist",
+      "type": "REQUIRES_CIDR_AUTHORIZATION",
+      "target": "vpc-prod-beijing"
+    },
+    {
+      "source": "RDS PostgreSQL",
+      "type": "SUPPORTS_USE_CASE",
+      "target": "Complex financial data processing"
+    },
+    {
+      "source": "RDS PostgreSQL",
+      "type": "SUPPORTS_USE_CASE",
+      "target": "GIS"
+    },
+    {
+      "source": "ecs.g8a.xlarge",
+      "type": "REQUIRES_OUTBOUND_PERMISSION",
+      "target": "TCP 5432"
+    },
+    {
+      "source": "High-concurrency transaction systems",
+      "type": "REQUIRES_INSTANCE_TYPE",
+      "target": "ecs.g8a.4xlarge"
+    },
+    {
+      "source": "RDS",
+      "type": "SUPPORTS",
+      "target": "High Availability Edition"
+    },
+    {
+      "source": "Cloud Enterprise Network (CEN)",
+      "type": "REQUIRES_FOR_CROSS_VPC",
+      "target": "vpc-prod-beijing"
+    }
+  ]
+}

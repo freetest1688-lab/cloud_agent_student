@@ -1,0 +1,393 @@
+{
+  "nodes": [
+    {
+      "id": "Cloud Platform",
+      "label": "Product",
+      "properties": []
+    },
+    {
+      "id": "Billing Modes",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "Bandwidth Billing Rules",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "Resource Release Conditions",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Refund Conditions",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Subscription",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "use_case",
+          "value": "Suitable for stable workloads running 24 hours a day (e.g., core databases on RDS, enterprise web servers on ecs.g8a.xlarge)"
+        },
+        {
+          "key": "billing_model",
+          "value": "Prepaid"
+        },
+        {
+          "key": "conversion_rules",
+          "value": "Cannot convert to pay-as-you-go or spot"
+        }
+      ]
+    },
+    {
+      "id": "Pay-As-You-Go",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "use_case",
+          "value": "Suitable for short-term workloads with distinct peak and off-peak periods, development and testing environments, or temporary capacity scaling during e-commerce promotions"
+        },
+        {
+          "key": "billing_model",
+          "value": "Postpaid"
+        },
+        {
+          "key": "billing_frequency",
+          "value": "Per second"
+        }
+      ]
+    },
+    {
+      "id": "ecs.g8a.xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "i4 series",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "gn7i",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "NVMe SSD",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "ESSD",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "No-Charge-When-Stopped",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Local Disks",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "Cloud Disks",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "Elastic IPs",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Spot Instances",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "use_case",
+          "value": "Suitable for stateless web services, offline data analysis, batch computing, and other workloads that can tolerate interruptions."
+        }
+      ]
+    },
+    {
+      "id": "Spot Billing",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "pricing_model",
+          "value": "Prices fluctuate with supply and demand"
+        },
+        {
+          "key": "savings",
+          "value": "up to 90% compared to pay-as-you-go"
+        }
+      ]
+    },
+    {
+      "id": "Protection Period",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "duration",
+          "value": "1 hour"
+        }
+      ]
+    },
+    {
+      "id": "Automatic Release Mechanism",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "notification_time",
+          "value": "5 minutes in advance"
+        }
+      ]
+    },
+    {
+      "id": "Conversion Restriction",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Spot instances absolutely do not support conversion to subscription billing"
+        }
+      ]
+    },
+    {
+      "id": "Elastic IP (EIP)",
+      "label": "Product",
+      "properties": []
+    },
+    {
+      "id": "Fixed Bandwidth",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "billing_method",
+          "value": "PayByBandwidth"
+        }
+      ]
+    },
+    {
+      "id": "Traffic",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "billing_method",
+          "value": "PayByTraffic"
+        }
+      ]
+    },
+    {
+      "id": "Outbound Traffic",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "billing_unit",
+          "value": "GB"
+        }
+      ]
+    },
+    {
+      "id": "Inbound Traffic",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "billing_unit",
+          "value": "Free"
+        }
+      ]
+    },
+    {
+      "id": "5-Day No-Questions-Asked Refund",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "refund_period",
+          "value": "5 days"
+        },
+        {
+          "key": "quota_limit",
+          "value": "1 use per calendar year"
+        },
+        {
+          "key": "instance_limit",
+          "value": "10 instances per use"
+        }
+      ]
+    },
+    {
+      "id": "Partial Refund",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "refund_type",
+          "value": "Pro-Rated Unsubscribe"
+        },
+        {
+          "key": "cancellation_fee",
+          "value": "15%"
+        }
+      ]
+    },
+    {
+      "id": "Overdue Payment",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "data_retention_period",
+          "value": "15 days"
+        }
+      ]
+    },
+    {
+      "id": "Pay-as-you-go",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "Automatic Release",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "action",
+          "value": "permanently released (destroyed)"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "Partial Refund",
+      "type": "APPLIES_TO",
+      "target": "Subscription"
+    },
+    {
+      "source": "Cloud Platform",
+      "type": "HAS_FEATURE",
+      "target": "Refund Conditions"
+    },
+    {
+      "source": "Cloud Platform",
+      "type": "SUPPORTS",
+      "target": "Bandwidth Billing Rules"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_BILLING_RULE",
+      "target": "Spot Billing"
+    },
+    {
+      "source": "Overdue Payment",
+      "type": "TRIGGERS",
+      "target": "Automatic Release"
+    },
+    {
+      "source": "5-Day No-Questions-Asked Refund",
+      "type": "APPLIES_TO",
+      "target": "Subscription"
+    },
+    {
+      "source": "Pay-As-You-Go",
+      "type": "SUPPORTS",
+      "target": "No-Charge-When-Stopped"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_FEATURE",
+      "target": "Conversion Restriction"
+    },
+    {
+      "source": "Subscription",
+      "type": "SUPPORTS",
+      "target": "ecs.g8a.xlarge"
+    },
+    {
+      "source": "Traffic",
+      "type": "INCLUDES",
+      "target": "Inbound Traffic"
+    },
+    {
+      "source": "Elastic IPs",
+      "type": "SUPPORTS",
+      "target": "Pay-As-You-Go"
+    },
+    {
+      "source": "Cloud Platform",
+      "type": "HAS_FEATURE",
+      "target": "Resource Release Conditions"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_FEATURE",
+      "target": "Automatic Release Mechanism"
+    },
+    {
+      "source": "Elastic IP (EIP)",
+      "type": "SUPPORTS",
+      "target": "Fixed Bandwidth"
+    },
+    {
+      "source": "Cloud Platform",
+      "type": "SUPPORTS",
+      "target": "Billing Modes"
+    },
+    {
+      "source": "Traffic",
+      "type": "REQUIRES",
+      "target": "Outbound Traffic"
+    },
+    {
+      "source": "i4 series",
+      "type": "REQUIRES",
+      "target": "Local Disks"
+    },
+    {
+      "source": "Elastic IP (EIP)",
+      "type": "SUPPORTS",
+      "target": "Traffic"
+    },
+    {
+      "source": "No-Charge-When-Stopped",
+      "type": "RESTRICTS",
+      "target": "i4 series"
+    },
+    {
+      "source": "No-Charge-When-Stopped",
+      "type": "RESTRICTS",
+      "target": "gn7i"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_FEATURE",
+      "target": "Protection Period"
+    },
+    {
+      "source": "Overdue Payment",
+      "type": "APPLIES_TO",
+      "target": "Pay-as-you-go"
+    },
+    {
+      "source": "Cloud Disks",
+      "type": "CONTAINS",
+      "target": "ESSD"
+    },
+    {
+      "source": "gn7i",
+      "type": "REQUIRES",
+      "target": "Local Disks"
+    },
+    {
+      "source": "Fixed Bandwidth",
+      "type": "REQUIRES",
+      "target": "Outbound Traffic"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+volumes/
+.env
+embedEtcd.yaml
+user.yaml
+*.pyc
+node_modules/

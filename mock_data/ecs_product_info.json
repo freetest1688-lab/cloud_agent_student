@@ -1,0 +1,928 @@
+{
+  "nodes": [
+    {
+      "id": "ECS",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "availability",
+          "value": "99.995%"
+        },
+        {
+          "key": "data_durability",
+          "value": "99.9999999%"
+        }
+      ]
+    },
+    {
+      "id": "China North 2 (Beijing)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "China East 1 (Hangzhou)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "Asia Pacific Southeast 1 (Singapore)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "Zone G (cn-beijing-g)",
+      "label": "AvailabilityZone",
+      "properties": []
+    },
+    {
+      "id": "Zone K (cn-beijing-k)",
+      "label": "AvailabilityZone",
+      "properties": []
+    },
+    {
+      "id": "Zone L (cn-beijing-l)",
+      "label": "AvailabilityZone",
+      "properties": []
+    },
+    {
+      "id": "Zone H (cn-hangzhou-h)",
+      "label": "AvailabilityZone",
+      "properties": []
+    },
+    {
+      "id": "Zone I (cn-hangzhou-i)",
+      "label": "AvailabilityZone",
+      "properties": []
+    },
+    {
+      "id": "Zone A (ap-southeast-1a)",
+      "label": "AvailabilityZone",
+      "properties": []
+    },
+    {
+      "id": "g8a",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "c8a",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "gn7i",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "r7",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "ebm",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "g7",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "c7",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "hfc7",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "ESSD AutoPL",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "ESSD PL1",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "ESSD PL0",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "ESSD PL2",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "ESSD PL3",
+      "label": "Storage",
+      "properties": []
+    },
+    {
+      "id": "Spot Instance",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Outbound Public Network Bandwidth",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "limit",
+          "value": "10 Gbps"
+        }
+      ]
+    },
+    {
+      "id": "8th-Generation Enterprise General-Purpose Instances (g8a)",
+      "label": "InstanceFamily",
+      "properties": [
+        {
+          "key": "processor",
+          "value": "AMD EPYC™ 9004 (Genoa)"
+        },
+        {
+          "key": "performance_improvement",
+          "value": "40%"
+        }
+      ]
+    },
+    {
+      "id": "ecs.g8a.xlarge",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "vCPU",
+          "value": "4"
+        },
+        {
+          "key": "memory",
+          "value": "16 GiB"
+        },
+        {
+          "key": "max_network_bandwidth",
+          "value": "10 Gbps"
+        },
+        {
+          "key": "max_packet_throughput",
+          "value": "2 million PPS"
+        },
+        {
+          "key": "max_ENIs",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "id": "ecs.g8a.4xlarge",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "vCPU",
+          "value": "16"
+        },
+        {
+          "key": "memory",
+          "value": "64 GiB"
+        },
+        {
+          "key": "max_network_bandwidth",
+          "value": "25 Gbps"
+        },
+        {
+          "key": "max_packet_throughput",
+          "value": "6 million PPS"
+        },
+        {
+          "key": "max_ENIs",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "id": "7th-Generation Enterprise Compute-Optimized Instances (c7)",
+      "label": "InstanceFamily",
+      "properties": [
+        {
+          "key": "processor",
+          "value": "3rd-generation Intel® Xeon® Scalable"
+        },
+        {
+          "key": "vCPU_to_memory_ratio",
+          "value": "1:2"
+        }
+      ]
+    },
+    {
+      "id": "ecs.c7.large",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "vCPU",
+          "value": "2"
+        },
+        {
+          "key": "memory",
+          "value": "4 GiB"
+        },
+        {
+          "key": "max_network_bandwidth",
+          "value": "5 Gbps"
+        },
+        {
+          "key": "max_packet_throughput",
+          "value": "500,000 PPS"
+        },
+        {
+          "key": "max_ENIs",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "id": "ecs.c7.8xlarge",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "vCPU",
+          "value": "32"
+        },
+        {
+          "key": "memory",
+          "value": "64 GiB"
+        },
+        {
+          "key": "max_network_bandwidth",
+          "value": "40 Gbps"
+        },
+        {
+          "key": "max_packet_throughput",
+          "value": "12 million PPS"
+        },
+        {
+          "key": "max_ENIs",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "id": "GPU Compute-Optimized Instances (gn7i)",
+      "label": "InstanceFamily",
+      "properties": [
+        {
+          "key": "GPU",
+          "value": "NVIDIA A10/A100 Tensor Core"
+        }
+      ]
+    },
+    {
+      "id": "ecs.gn7i-c8g1.2xlarge",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "vCPU",
+          "value": "8"
+        },
+        {
+          "key": "memory",
+          "value": "30 GiB"
+        },
+        {
+          "key": "GPU",
+          "value": "1 NVIDIA A10 (24 GB VRAM)"
+        },
+        {
+          "key": "network_bandwidth",
+          "value": "16 Gbps"
+        }
+      ]
+    },
+    {
+      "id": "ESSD PL0 Cloud Disk",
+      "label": "Storage",
+      "properties": [
+        {
+          "key": "maximum_single_disk_capacity",
+          "value": "32768 GiB"
+        },
+        {
+          "key": "maximum_IOPS",
+          "value": "10000"
+        },
+        {
+          "key": "maximum_throughput",
+          "value": "180 MB/s"
+        },
+        {
+          "key": "suitable_for",
+          "value": "development and testing environments"
+        }
+      ]
+    },
+    {
+      "id": "ESSD PL1 Cloud Disk",
+      "label": "Storage",
+      "properties": [
+        {
+          "key": "maximum_single_disk_capacity",
+          "value": "32768 GiB"
+        },
+        {
+          "key": "maximum_IOPS",
+          "value": "50000"
+        },
+        {
+          "key": "maximum_throughput",
+          "value": "350 MB/s"
+        },
+        {
+          "key": "suitable_for",
+          "value": "small-to-medium databases and production environments"
+        }
+      ]
+    },
+    {
+      "id": "ESSD PL2 Cloud Disk",
+      "label": "Storage",
+      "properties": [
+        {
+          "key": "maximum_single_disk_capacity",
+          "value": "32768 GiB"
+        },
+        {
+          "key": "maximum_IOPS",
+          "value": "100000"
+        },
+        {
+          "key": "maximum_throughput",
+          "value": "750 MB/s"
+        }
+      ]
+    },
+    {
+      "id": "Local NVMe SSD",
+      "label": "Storage",
+      "properties": [
+        {
+          "key": "data_persistence",
+          "value": "no"
+        },
+        {
+          "key": "latency",
+          "value": "extremely low"
+        }
+      ]
+    },
+    {
+      "id": "i4",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "VPC",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "Billed by Fixed Bandwidth",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "pricing",
+          "value": "¥23/Mbps/month to ¥80/Mbps/month"
+        },
+        {
+          "key": "maximum_bandwidth",
+          "value": "200 Mbps"
+        }
+      ]
+    },
+    {
+      "id": "Billed by Traffic",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "pricing",
+          "value": "¥0.8/GB"
+        },
+        {
+          "key": "peak_bandwidth",
+          "value": "100 Mbps (Beijing region)"
+        }
+      ]
+    },
+    {
+      "id": "Security Group",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "default_inbound_traffic",
+          "value": "deny"
+        },
+        {
+          "key": "default_outbound_traffic",
+          "value": "allow"
+        },
+        {
+          "key": "max_instances",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "id": "Subscription",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "use_case",
+          "value": "Core business workloads, 24/7 continuously running services"
+        },
+        {
+          "key": "discount_one_year",
+          "value": "15%"
+        },
+        {
+          "key": "discount_three_years",
+          "value": "45%"
+        }
+      ]
+    },
+    {
+      "id": "5-Day No-Questions-Asked Refund",
+      "label": "RefundPolicy",
+      "properties": [
+        {
+          "key": "refund_period",
+          "value": "5 days"
+        },
+        {
+          "key": "refund_limit",
+          "value": "1 refund per account per calendar year"
+        },
+        {
+          "key": "instance_limit",
+          "value": "10 instances per refund"
+        }
+      ]
+    },
+    {
+      "id": "Partial Refund",
+      "label": "RefundPolicy",
+      "properties": [
+        {
+          "key": "refund_condition",
+          "value": "Unsubscribe after 5 days"
+        },
+        {
+          "key": "cancellation_fee",
+          "value": "15%"
+        }
+      ]
+    },
+    {
+      "id": "Pay-As-You-Go",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "billing_cycle",
+          "value": "per second"
+        },
+        {
+          "key": "invoice_generation",
+          "value": "top of each hour"
+        }
+      ]
+    },
+    {
+      "id": "No-Charge-When-Stopped",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Compute resources stop accruing charges when stopped"
+        }
+      ]
+    },
+    {
+      "id": "Spot Instances",
+      "label": "BillingRule",
+      "properties": [
+        {
+          "key": "pricing_mechanism",
+          "value": "Prices fluctuate with supply and demand"
+        },
+        {
+          "key": "maximum_discount",
+          "value": "90%"
+        }
+      ]
+    },
+    {
+      "id": "1-Hour Protection Period",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "1-hour price and inventory protection period after creation"
+        }
+      ]
+    },
+    {
+      "id": "Automatic Release",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Automatically release instance if market price exceeds bid or resource pool is insufficient"
+        }
+      ]
+    },
+    {
+      "id": "No Conversion to Subscription",
+      "label": "Constraint",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Spot instances do not support conversion to subscription billing"
+        }
+      ]
+    },
+    {
+      "id": "No Instance Type Changes",
+      "label": "Constraint",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Spot instances do not support instance type changes"
+        }
+      ]
+    },
+    {
+      "id": "Local-Disk Instances",
+      "label": "InstanceType",
+      "properties": [
+        {
+          "key": "example",
+          "value": "i4"
+        }
+      ]
+    },
+    {
+      "id": "GPU Instances with Local Disks",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "On-Demand Rate",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "Alibaba Cloud Linux 3",
+      "label": "OperatingSystem",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Officially optimized CentOS alternative with enterprise-grade support"
+        }
+      ]
+    },
+    {
+      "id": "TencentOS Server 3.1",
+      "label": "OperatingSystem",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Officially optimized CentOS alternative with enterprise-grade support"
+        }
+      ]
+    },
+    {
+      "id": "Windows Server 2022 Datacenter Edition",
+      "label": "OperatingSystem",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Requires instances with 4 or more vCPUs"
+        },
+        {
+          "key": "price_increase",
+          "value": "15% higher than Linux equivalent"
+        }
+      ]
+    },
+    {
+      "id": "Custom Image",
+      "label": "Image",
+      "properties": [
+        {
+          "key": "feature",
+          "value": "Supports cross-region replication"
+        }
+      ]
+    },
+    {
+      "id": "Cross-region Replication",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Replication process consumes public network traffic and incurs charges"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "China North 2 (Beijing)",
+      "type": "CONTAINS",
+      "target": "Zone K (cn-beijing-k)"
+    },
+    {
+      "source": "ecs.gn7i-c8g1.2xlarge",
+      "type": "REQUIRES",
+      "target": "ESSD PL2"
+    },
+    {
+      "source": "Subscription",
+      "type": "HAS_REFUND_POLICY",
+      "target": "5-Day No-Questions-Asked Refund"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_CONSTRAINT",
+      "target": "No Instance Type Changes"
+    },
+    {
+      "source": "Partial Refund",
+      "type": "USES_BILLING_RULE",
+      "target": "On-Demand Rate"
+    },
+    {
+      "source": "Local NVMe SSD",
+      "type": "NOT_SUPPORTED",
+      "target": "g8a"
+    },
+    {
+      "source": "No-Charge-When-Stopped",
+      "type": "DOES_NOT_SUPPORT",
+      "target": "Local-Disk Instances"
+    },
+    {
+      "source": "Zone G (cn-beijing-g)",
+      "type": "SUPPORTS",
+      "target": "g8a"
+    },
+    {
+      "source": "Zone A (ap-southeast-1a)",
+      "type": "SUPPORTS",
+      "target": "c7"
+    },
+    {
+      "source": "Zone K (cn-beijing-k)",
+      "type": "SUPPORTS",
+      "target": "ESSD PL2"
+    },
+    {
+      "source": "China North 2 (Beijing)",
+      "type": "CONTAINS",
+      "target": "Zone G (cn-beijing-g)"
+    },
+    {
+      "source": "Subscription",
+      "type": "HAS_REFUND_POLICY",
+      "target": "Partial Refund"
+    },
+    {
+      "source": "Zone A (ap-southeast-1a)",
+      "type": "HAS_FEATURE",
+      "target": "Outbound Public Network Bandwidth"
+    },
+    {
+      "source": "ECS",
+      "type": "DEPLOYED_IN",
+      "target": "China North 2 (Beijing)"
+    },
+    {
+      "source": "ECS",
+      "type": "DEPLOYED_IN",
+      "target": "Asia Pacific Southeast 1 (Singapore)"
+    },
+    {
+      "source": "VPC",
+      "type": "REQUIRES",
+      "target": "enterprise-grade instances"
+    },
+    {
+      "source": "China East 1 (Hangzhou)",
+      "type": "CONTAINS",
+      "target": "Zone I (cn-hangzhou-i)"
+    },
+    {
+      "source": "ESSD PL2 Cloud Disk",
+      "type": "SUPPORTS",
+      "target": "c7"
+    },
+    {
+      "source": "Zone A (ap-southeast-1a)",
+      "type": "SUPPORTS",
+      "target": "g7"
+    },
+    {
+      "source": "Zone G (cn-beijing-g)",
+      "type": "SUPPORTS",
+      "target": "ESSD AutoPL"
+    },
+    {
+      "source": "Asia Pacific Southeast 1 (Singapore)",
+      "type": "CONTAINS",
+      "target": "Zone A (ap-southeast-1a)"
+    },
+    {
+      "source": "Zone L (cn-beijing-l)",
+      "type": "SUPPORTS",
+      "target": "r7"
+    },
+    {
+      "source": "Zone I (cn-hangzhou-i)",
+      "type": "SUPPORTS",
+      "target": "hfc7"
+    },
+    {
+      "source": "7th-Generation Enterprise Compute-Optimized Instances (c7)",
+      "type": "CONTAINS",
+      "target": "ecs.c7.8xlarge"
+    },
+    {
+      "source": "Zone K (cn-beijing-k)",
+      "type": "SUPPORTS",
+      "target": "ESSD PL0"
+    },
+    {
+      "source": "Billed by Traffic",
+      "type": "BELONGS_TO",
+      "target": "Public Network Bandwidth Billing"
+    },
+    {
+      "source": "ESSD PL2 Cloud Disk",
+      "type": "SUPPORTS",
+      "target": "g8a"
+    },
+    {
+      "source": "Zone G (cn-beijing-g)",
+      "type": "SUPPORTS",
+      "target": "ESSD PL1"
+    },
+    {
+      "source": "Security Group",
+      "type": "CONTAINS",
+      "target": "instance"
+    },
+    {
+      "source": "Pay-As-You-Go",
+      "type": "HAS_FEATURE",
+      "target": "No-Charge-When-Stopped"
+    },
+    {
+      "source": "Zone K (cn-beijing-k)",
+      "type": "SUPPORTS",
+      "target": "ESSD PL3"
+    },
+    {
+      "source": "No-Charge-When-Stopped",
+      "type": "DOES_NOT_SUPPORT",
+      "target": "GPU Instances with Local Disks"
+    },
+    {
+      "source": "ESSD PL1 Cloud Disk",
+      "type": "SUPPORTS",
+      "target": "c7"
+    },
+    {
+      "source": "ESSD PL2 Cloud Disk",
+      "type": "SUPPORTS",
+      "target": "gn7i"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_CONSTRAINT",
+      "target": "No Conversion to Subscription"
+    },
+    {
+      "source": "Zone H (cn-hangzhou-h)",
+      "type": "SUPPORTS",
+      "target": "ebm"
+    },
+    {
+      "source": "Zone K (cn-beijing-k)",
+      "type": "SUPPORTS",
+      "target": "gn7i"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_FEATURE",
+      "target": "Automatic Release"
+    },
+    {
+      "source": "Billed by Fixed Bandwidth",
+      "type": "BELONGS_TO",
+      "target": "Public Network Bandwidth Billing"
+    },
+    {
+      "source": "ESSD PL1 Cloud Disk",
+      "type": "SUPPORTS",
+      "target": "g8a"
+    },
+    {
+      "source": "Zone G (cn-beijing-g)",
+      "type": "SUPPORTS",
+      "target": "c8a"
+    },
+    {
+      "source": "8th-Generation Enterprise General-Purpose Instances (g8a)",
+      "type": "CONTAINS",
+      "target": "ecs.g8a.xlarge"
+    },
+    {
+      "source": "ECS",
+      "type": "DEPLOYED_IN",
+      "target": "China East 1 (Hangzhou)"
+    },
+    {
+      "source": "7th-Generation Enterprise Compute-Optimized Instances (c7)",
+      "type": "CONTAINS",
+      "target": "ecs.c7.large"
+    },
+    {
+      "source": "Zone K (cn-beijing-k)",
+      "type": "SUPPORTS",
+      "target": "ESSD PL1"
+    },
+    {
+      "source": "China North 2 (Beijing)",
+      "type": "CONTAINS",
+      "target": "Zone L (cn-beijing-l)"
+    },
+    {
+      "source": "Zone L (cn-beijing-l)",
+      "type": "PRIORITIZES",
+      "target": "Spot Instance"
+    },
+    {
+      "source": "Local NVMe SSD",
+      "type": "SUPPORTS",
+      "target": "i4"
+    },
+    {
+      "source": "Zone H (cn-hangzhou-h)",
+      "type": "SUPPORTS",
+      "target": "c7"
+    },
+    {
+      "source": "China East 1 (Hangzhou)",
+      "type": "CONTAINS",
+      "target": "Zone H (cn-hangzhou-h)"
+    },
+    {
+      "source": "8th-Generation Enterprise General-Purpose Instances (g8a)",
+      "type": "CONTAINS",
+      "target": "ecs.g8a.4xlarge"
+    },
+    {
+      "source": "ESSD PL1 Cloud Disk",
+      "type": "SUPPORTS",
+      "target": "gn7i"
+    },
+    {
+      "source": "GPU Compute-Optimized Instances (gn7i)",
+      "type": "CONTAINS",
+      "target": "ecs.gn7i-c8g1.2xlarge"
+    },
+    {
+      "source": "Local NVMe SSD",
+      "type": "NOT_SUPPORTED",
+      "target": "c7"
+    },
+    {
+      "source": "Zone H (cn-hangzhou-h)",
+      "type": "SUPPORTS",
+      "target": "g7"
+    },
+    {
+      "source": "Spot Instances",
+      "type": "HAS_FEATURE",
+      "target": "1-Hour Protection Period"
+    },
+    {
+      "source": "Custom Image",
+      "type": "SUPPORTS",
+      "target": "Cross-region Replication"
+    }
+  ]
+}

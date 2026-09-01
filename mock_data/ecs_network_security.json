@@ -1,0 +1,361 @@
+{
+  "nodes": [
+    {
+      "id": "VPC",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Virtual Private Cloud"
+        }
+      ]
+    },
+    {
+      "id": "vpc-prod-beijing",
+      "label": "VPC",
+      "properties": [
+        {
+          "key": "address_range",
+          "value": "10.0.0.0/8"
+        }
+      ]
+    },
+    {
+      "id": "vpc-dev-beijing",
+      "label": "VPC",
+      "properties": []
+    },
+    {
+      "id": "VSwitch",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Availability-zone-scoped resource"
+        }
+      ]
+    },
+    {
+      "id": "vsw-beijing-k",
+      "label": "VSwitch",
+      "properties": [
+        {
+          "key": "zone",
+          "value": "cn-beijing-k"
+        }
+      ]
+    },
+    {
+      "id": "vsw-beijing-g",
+      "label": "VSwitch",
+      "properties": [
+        {
+          "key": "zone",
+          "value": "cn-beijing-g"
+        }
+      ]
+    },
+    {
+      "id": "cn-beijing-k",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "cn-beijing-g",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "ecs.g8a.4xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "gn7i",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "CEN",
+      "label": "Product",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Cloud Enterprise Network"
+        }
+      ]
+    },
+    {
+      "id": "Elastic IP (EIP)",
+      "label": "Product",
+      "properties": []
+    },
+    {
+      "id": "Shared Bandwidth",
+      "label": "Product",
+      "properties": []
+    },
+    {
+      "id": "ecs.c7.large",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "ecs.g8a.xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "VPC-type resources",
+      "label": "Feature",
+      "properties": []
+    },
+    {
+      "id": "China North 2 (Beijing)",
+      "label": "Region",
+      "properties": []
+    },
+    {
+      "id": "Subscription",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "Fixed Bandwidth",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "Pay-by-Traffic",
+      "label": "BillingRule",
+      "properties": []
+    },
+    {
+      "id": "30%–40%",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "cost_reduction",
+          "value": "30%–40%"
+        }
+      ]
+    },
+    {
+      "id": "Security Group",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Stateful virtual firewalls based on stateful packet inspection, controlling inbound and outbound traffic for instances."
+        }
+      ]
+    },
+    {
+      "id": "ENI",
+      "label": "Feature",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Elastic Network Interface, where security group rules are enforced."
+        }
+      ]
+    },
+    {
+      "id": "ecs.c7.8xlarge",
+      "label": "InstanceType",
+      "properties": []
+    },
+    {
+      "id": "sg-web",
+      "label": "SecurityGroup",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Allows ports 80/443."
+        }
+      ]
+    },
+    {
+      "id": "sg-db",
+      "label": "SecurityGroup",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Internal traffic only, no public access."
+        }
+      ]
+    },
+    {
+      "id": "sg-web-prod",
+      "label": "SecurityGroup",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Web cluster security group."
+        }
+      ]
+    },
+    {
+      "id": "sg-rds-internal",
+      "label": "SecurityGroup",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Database security group."
+        }
+      ]
+    },
+    {
+      "id": "203.0.113.1/32",
+      "label": "IP",
+      "properties": [
+        {
+          "key": "description",
+          "value": "Specific bastion host IP."
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "Elastic IP (EIP)",
+      "type": "SUPPORTS",
+      "target": "ecs.c7.large"
+    },
+    {
+      "source": "ENI",
+      "type": "ENFORCES",
+      "target": "Security Group"
+    },
+    {
+      "source": "vpc-dev-beijing",
+      "type": "REQUIRES",
+      "target": "CEN"
+    },
+    {
+      "source": "vsw-beijing-k",
+      "type": "BELONGS_TO",
+      "target": "vpc-prod-beijing"
+    },
+    {
+      "source": "ecs.g8a.4xlarge",
+      "type": "RECOMMENDED_FOR",
+      "target": "vsw-beijing-k"
+    },
+    {
+      "source": "vsw-beijing-g",
+      "type": "BELONGS_TO",
+      "target": "vpc-prod-beijing"
+    },
+    {
+      "source": "Elastic IP (EIP)",
+      "type": "REGIONAL_CONSTRAINT",
+      "target": "China North 2 (Beijing)"
+    },
+    {
+      "source": "vpc-prod-beijing",
+      "type": "REQUIRES",
+      "target": "CEN"
+    },
+    {
+      "source": "vsw-beijing-g",
+      "type": "DEPLOYED_IN",
+      "target": "cn-beijing-g"
+    },
+    {
+      "source": "Shared Bandwidth",
+      "type": "REDUCES_COST_BY",
+      "target": "30%–40%"
+    },
+    {
+      "source": "ENI",
+      "type": "CAN_BE_ASSIGNED",
+      "target": "sg-db"
+    },
+    {
+      "source": "Shared Bandwidth",
+      "type": "CONTAINS",
+      "target": "Elastic IP (EIP)"
+    },
+    {
+      "source": "vsw-beijing-k",
+      "type": "DEPLOYED_IN",
+      "target": "cn-beijing-k"
+    },
+    {
+      "source": "gn7i",
+      "type": "CANNOT_BE_DEPLOYED_UNDER",
+      "target": "vsw-beijing-g"
+    },
+    {
+      "source": "vpc-prod-beijing",
+      "type": "ISOLATED_FROM",
+      "target": "vpc-dev-beijing"
+    },
+    {
+      "source": "vsw-beijing-k",
+      "type": "INSTANCE_OF",
+      "target": "VSwitch"
+    },
+    {
+      "source": "ENI",
+      "type": "CAN_BE_ATTACHED_TO",
+      "target": "ecs.g8a.4xlarge"
+    },
+    {
+      "source": "ENI",
+      "type": "CAN_BE_ATTACHED_TO",
+      "target": "ecs.c7.8xlarge"
+    },
+    {
+      "source": "vpc-dev-beijing",
+      "type": "INSTANCE_OF",
+      "target": "VPC"
+    },
+    {
+      "source": "Elastic IP (EIP)",
+      "type": "ATTACHES_TO",
+      "target": "VPC-type resources"
+    },
+    {
+      "source": "Shared Bandwidth",
+      "type": "REQUIRES",
+      "target": "Pay-by-Traffic"
+    },
+    {
+      "source": "sg-web-prod",
+      "type": "ALLOWS_INBOUND",
+      "target": "203.0.113.1/32"
+    },
+    {
+      "source": "sg-web-prod",
+      "type": "ALLOWS_INBOUND",
+      "target": "sg-rds-internal"
+    },
+    {
+      "source": "ENI",
+      "type": "CAN_BE_ASSIGNED",
+      "target": "sg-web"
+    },
+    {
+      "source": "Subscription",
+      "type": "USES",
+      "target": "Fixed Bandwidth"
+    },
+    {
+      "source": "vpc-prod-beijing",
+      "type": "INSTANCE_OF",
+      "target": "VPC"
+    },
+    {
+      "source": "ecs.g8a.xlarge",
+      "type": "SUPPORTS",
+      "target": "Shared Bandwidth"
+    },
+    {
+      "source": "vsw-beijing-g",
+      "type": "INSTANCE_OF",
+      "target": "VSwitch"
+    }
+  ]
+}
